@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Water Price</title>
+</head>
+<body>
+    <div>
+        <header>
+            <h2>Water price calculator</h2>
+        </header>
+    </div>
+
+    <nav>
+        <ul class="horizontal-menu">
+          <li><a href="#">Calculator</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h3>Output Temperature</h3>
+            <div>
+                <label for="output-temp">Water output Temperature:</label>
+                <input type="number" id="output-temp" value="30" min="0" max="100"> °C
+                <button id="output-temp-btn">Set Output Temperature</button>
+            </div>
+            <div>
+                <label for="amount-water">Amount of Water:</label>
+                <input type="number" id="amount-water" value="100" min="0"> l
+                <button id="amount-water-btn">Set Amount of water</button>
+            </div>
+
+            <div>
+                <label for="cold-water-consumption">Cold Water Consumption:</label>
+                <input type="number" id="cold-water-consumption" value="0" readonly> l
+            </div>
+            <div>
+                <label for="hot-water-consumption">Hot Water Consumption:</label>
+                <input type="number" id="hot-water-consumption" value="0" readonly> l
+            </div>
+
+            <div>
+                <label for="cost-of-water">Cost of the water:</label>
+                <input type="number" id="cost-of-water" value="0" readonly> €
+            </div>
+        </section>
+
+      
+        <section>
+            <h3>Alternative Output Temperature</h3>
+            <div>
+                <label for="alternative-output-temp">Alternative Output Temperature:</label>
+                <input type="number" id="alternative-output-temp" value="30" min="0" max="100"> °C
+                <button id="alternative-output-temp-btn">Set Alternative Temperature</button>
+            </div>
+            <div>
+                <label for="alternative-cold-water">Cold Water Consumption:</label>
+                <input type="number" id="alternative-cold-water" value="0" readonly> l
+            </div>
+            <div>
+                <label for="alternative-hot-water">Hot Water Consumption:</label>
+                <input type="number" id="alternative-hot-water" value="0" readonly> l
+            </div>
+            <div>
+                <label for="alternative-cost">Cost of the water:</label>
+                <input type="number" id="alternative-cost" value="0" readonly> €
+            </div>
+        </section>
+
+
+        <section>
+            <h3>Cost Difference</h3>
+            <div>
+                <label for="cost-difference-euros">Difference in Cost (euros):</label>
+                <input type="number" id="cost-difference-euros" value="0" readonly> €
+            </div>
+            <div>
+                <label for="cost-difference-percent">Difference in Cost (percent):</label>
+                <input type="number" id="cost-difference-percent" value="0" readonly> %
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="https://www.ouka.fi/media/14003/download">Water parameters of Oulu tap water</a></p>   
+    </footer>
+    <script src="js/functions.js"></script>
+</body>
+</html>

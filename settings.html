@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Settings</title>
+</head>
+<body>
+    <div>
+        <header>
+            <h2>Settings</h2>
+        </header>
+    </div>
+
+    <nav>
+        <ul class="horizontal-menu">
+          <li><a href="index.html">Calculator</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h3>Water Settings</h3>
+            <div>
+                <label for="cold-water">Cold Water Temp:</label>
+                <input type="number" id="cold-water" value="5" min="0" max="100">
+                <button id="cold-water-btn">Set Cold Water Temperature</button>
+            </div>
+            <div>
+                <label for="hot-water">Hot Water Temp:</label>
+                <input type="number" id="hot-water" value="55" min="0" max="100">
+                <button id="hot-water-btn">Set Hot Water Temperature</button>
+            </div>
+            <div>
+                <label for="cold-water-cost">Cold Water Cost (€/l):</label>
+                <input type="number" id="cold-water-cost" value="0.00392" step="0.00001">
+                <button id="cold-water-cost-btn">Set Cold Water Cost</button>
+            </div>
+            <div>
+                <label for="hot-water-cost">Hot Water Cost (€/l):</label>
+                <input type="number" id="hot-water-cost" value="0.00821" step="0.00001">
+                <button id="hot-water-cost-btn">Set Hot Water Cost</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="https://www.ouka.fi/media/14003/download">Water parameters of Oulu tap water</a></p> 
+    </footer>
+    <script src="js/settings.js"></script>
+</body>
+</html>
