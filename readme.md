@@ -1,11 +1,11 @@
-#Water price calculator
+# Water price calculator
 
 Tämä tiedosto sisältää ohjeet Water price calculatorin käyttöön.
 
-##Asennus
+## Asennus
 Ohjelma toimii täysin websivulla eikä mitään asennuksia tarvita. Ohjelman käyttö ei vaadi avoimen datan palveluiden avaimia.
 
-##Toiminta
+## Toiminta
 Ohjelma laskee vedenkäytöstä koituvat kustannukset. Sille annetaan Water output Temperature kenttään haluttu lämpötila ja
 Amount of Water kenttään käytettävän veden määrä. Niiden ja valmiiksi asetettujen kylmän ja kuuman veden lämpötilojen ja
 hintojen perusteella se laskee tarvittavan kylmän ja kuuman veden määrän sekä veden hinnan. 
